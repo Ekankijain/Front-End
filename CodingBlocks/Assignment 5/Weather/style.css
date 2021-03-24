@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('https://i.ibb.co/XXKkcch/night.png');
+    background-size: cover;
+    background-position: top center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #DF8E00;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
