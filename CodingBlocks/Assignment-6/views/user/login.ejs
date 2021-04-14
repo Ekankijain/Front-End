@@ -1,0 +1,18 @@
+<%- include('../partials/head.ejs') %>
+<div class="container log">
+  <div class="mx-auto shadow p-5 rounded-lg form">
+    <h1 class="text-center"><%= pname %></h1>
+    <form autocomplete="off" action="/user/sign" method="POST">
+      <div class="form-group">
+        <label for="uname">username:</label>
+        <input id="uname" class="form-control" required type="text" name="username" />
+      </div>
+      <div class="form-group">
+        <label for="pword">password:</label>
+        <input id="pword" class="form-control" required type="password" name="password" />
+      </div>
+      <button class="btn btn-success d-flex mx-auto" type="submit">submit</button>
+    </form>
+  </div>
+</div>
+<%- include('../partials/tail.ejs') %>

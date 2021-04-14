@@ -1,0 +1,10 @@
+<%- include('../partials/head.ejs') %>
+<%- include('../partials/header.ejs', {title : blog.title}) %>
+<div class="container">
+    <p class="lead text-center"> <%= blog.snippet %> </p>
+    <pre wrap="soft" class="text-justify"> <%= blog.content %> </pre>
+    <!-- <% // blog.content.split("\n").forEach(p => { %>
+    <p wrap="soft" class="text-justify"> <%= // p %> </p>
+    <% // }) %> -->
+</div>
+<%- include('../partials/tail.ejs') %>

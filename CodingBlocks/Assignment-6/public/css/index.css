@@ -1,0 +1,70 @@
+.hea {
+    background-color: #41bb00;
+}
+
+.jumtex {
+    font-size: 15vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vw;
+}
+
+.bot {
+    position: relative;
+    bottom: 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.fix {
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+}
+
+.area {
+    height: 50vh;
+    resize: none;
+}
+
+.log {
+    position: relative;
+    top: 20vh;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .jumtex {
+        font-size: 7vw;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

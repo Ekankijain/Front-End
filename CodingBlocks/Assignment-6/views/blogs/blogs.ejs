@@ -1,0 +1,33 @@
+<%- include('../partials/head.ejs') %>
+<%- include('../partials/header.ejs', {title : 'Blogs'}) %>
+<div class="container">
+    <div class="grid">
+        <% if(blogs) { %>
+        <% blogs.forEach(blog => { %>
+        <div class="card" id=<%= blog._id %>>
+            <!-- <img src="/image/node.jpeg" class="card-img-top img-fluid" alt="..."> -->
+            <div class="card-body">
+                <h2 class="card-title"> <%= blog.title %> </h2>
+                <p class="card-text"> <%= blog.snippet %> </p>
+            </div>
+            <div class="container pb-3">
+                <a onclick="displayBlog('<%= blog._id %>')" class="text-success pointer">read</a>
+                <p class="text-secondary float-right small">
+                    <%= new Date(blog.createdAt).toDateString() %> </p>
+            </div>
+        </div>
+        <% }) %>
+        <% } %>
+    </div>
+</div>
+
+<script>
+    function displayBlog(id) {
+        window.location.href = '/blogs/blog/' + id;
+    }
+
+    function print(blog) {
+        console.log(blog);
+    }
+</script>
+<%- include('../partials/tail.ejs') %>
